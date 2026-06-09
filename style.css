@@ -160,13 +160,26 @@ h2 {
 
 .panel {
   background: white;
-  padding: 44px;
+  padding: 36px 44px;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
+display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-height: 280px;
+}
+
+.panel h2 {
+  margin-top: 0;
+
+  margin-bottom: 28px;
 }
 
 .panel p {
-  margin-bottom: 28px;
+  margin: 0 0 32px;
 }
 
 footer {
