@@ -47,7 +47,7 @@ body {
 .hero h1 {
   margin: 20px 0;
 
-  font-size: clamp(42px, 6vw, 72px);
+  font-size: clamp(36px, 4.6vw, 54px);
 
   line-height: .95;
 }
@@ -154,13 +154,7 @@ h2 {
 
 .grid {
   display: grid;
-
-  grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(280px, 1fr)
-    );
-
+  grid-template-columns: repeat(3, 1fr);
   gap: 18px;
 }
 
@@ -178,13 +172,7 @@ h2 {
 
 .shots {
   display: grid;
-
-  grid-template-columns:
-    repeat(
-      auto-fit,
-      minmax(220px, 1fr)
-    );
-
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
