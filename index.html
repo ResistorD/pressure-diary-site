@@ -169,6 +169,15 @@ document
 .forEach((e,i)=>
 e.src=screenshot(lang,imgs[i]));
 
+document
+.querySelectorAll('.lang-btn')
+.forEach(e =>
+e.classList.remove('active'));
+
+document
+.getElementById(lang + 'Btn')
+.classList.add('active');
+  
 }
 
 setLang(
