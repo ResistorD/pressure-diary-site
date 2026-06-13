@@ -44,22 +44,22 @@ body {
 
 .lang-switch {
   display: flex;
-  gap: 14px;
+  gap: 10px;
   align-items: center;
-  margin-bottom: 18px;
+  margin-bottom: 34px;
 }
 
 .lang-btn {
-  height: 46px;
-  min-width: 70px;
-  padding: 0 22px;
+  height: 38px;
+  min-width: 58px;
+  padding: 0 16px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 18px;
+  border-radius: 14px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1;
   cursor: pointer;
   background: white;
