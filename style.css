@@ -46,18 +46,18 @@ body {
   display: flex;
   gap: 10px;
   align-items: center;
-  margin-bottom: 34px;
+  margin-bottom: 72px;
 }
 
 .lang-btn {
-  height: 38px;
-  min-width: 58px;
-  padding: 0 16px;
+  height: 30px;
+  min-width: 42px;
+  padding: 0 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
-  border-radius: 14px;
+  border-radius: 12px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1;
