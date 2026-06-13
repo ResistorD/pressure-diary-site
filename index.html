@@ -177,13 +177,18 @@ localStorage.getItem('lang') ?? 'ru'
 
 </script>  
 <body>
-  <div style="position:absolute;top:24px;right:40px;z-index:100">
-    <button onclick="setLang('ru')" id="ruBtn">RU</button>
-    <button onclick="setLang('en')" id="enBtn">EN</button>
-  </div>
   <main class="page" id="page">
     <section class="hero">
       <div class="hero-text">
+        <div class="lang-switch">
+          <button onclick="setLang('ru')" id="ruBtn" class="lang-btn">
+            RU
+          </button>
+
+          <button onclick="setLang('en')" id="enBtn" class="lang-btn">
+            EN
+          </button>
+        </div>
         <div class="badge">Pressure Diary</div>
         <h1>Дневник давления без лишнего шума</h1>
         <p>
