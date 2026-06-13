@@ -42,9 +42,10 @@ body {
 }
 
 .lang-switch {
-  margin-bottom: 18px;
   display: inline-flex;
   gap: 10px;
+  margin-bottom: 32px;
+  transform: translateY(-28px);
 }
 
 .lang-btn {
