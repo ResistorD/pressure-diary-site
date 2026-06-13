@@ -7,8 +7,181 @@
   <meta name="description" content="Простой дневник артериального давления и пульса без аккаунтов, рекламы и подписок." />
   <link rel="stylesheet" href="style.css" />
 </head>
+<script>
+
+const i18n = {
+
+ru: {
+title:'Дневник давления без лишнего шума',
+
+desc:'Удобное приложение для записи артериального давления и пульса: журнал, графики, заметки, теги, экспорт и резервные копии.',
+
+download:'Скачать APK',
+
+support:'Поддержать проект',
+
+note:'Без аккаунтов. Без рекламы. Без подписок.',
+
+features:'Что умеет приложение',
+
+cards:[
+'Журнал измерений по дням',
+'Графики давления и пульса',
+'Комментарии и шаблоны заметок',
+'Теги для обстоятельств измерения',
+'Экспорт CSV и PDF',
+'Резервные копии JSON'
+],
+
+shots:'Скриншоты',
+
+downloadTitle:'Скачать',
+
+downloadText:
+'APK-файл будет доступен здесь после публикации тестовой сборки.',
+
+downloadBtn:
+'Скачать APK скоро',
+
+supportTitle:
+'Поддержать проект',
+
+supportText:
+'Если приложение оказалось полезным — можно символически поддержать разработку. Но это совершенно не обязательно 🙂',
+
+supportBtn:
+'Ссылка появится позже'
+},
+
+en: {
+
+title:
+'Blood pressure tracking without noise',
+
+desc:
+'Simple blood pressure and pulse tracking with charts, notes, tags, export and backup.',
+
+download:
+'Download APK',
+
+support:
+'Support project',
+
+note:
+'No accounts. No ads. No subscriptions.',
+
+features:
+'Features',
+
+cards:[
+'Measurement journal',
+'Pressure and pulse charts',
+'Notes and templates',
+'Measurement tags',
+'CSV and PDF export',
+'JSON backup'
+],
+
+shots:
+'Screenshots',
+
+downloadTitle:
+'Download',
+
+downloadText:
+'APK will appear here after the first public release.',
+
+downloadBtn:
+'APK coming soon',
+
+supportTitle:
+'Support',
+
+supportText:
+'If Pressure Diary was useful — you can support development. Completely optional 🙂',
+
+supportBtn:
+'Support page'
+}
+
+};
+
+function screenshot(lang,file){
+return `./assets/screenshots/${lang}/${file}`;
+}
+
+function setLang(lang){
+
+localStorage.setItem('lang',lang);
+
+document.documentElement.lang=lang;
+
+document.querySelector('.hero h1').textContent=i18n[lang].title;
+
+document.querySelector('.hero p').textContent=i18n[lang].desc;
+
+document.querySelector('.actions a:nth-child(1)').textContent=i18n[lang].download;
+
+document.querySelector('.actions a:nth-child(2)').textContent=i18n[lang].support;
+
+document.querySelector('.note').textContent=i18n[lang].note;
+
+document.querySelector('.features h2').textContent=i18n[lang].features;
+
+document.querySelectorAll('.card')
+.forEach((e,i)=>e.textContent=i18n[lang].cards[i]);
+
+document.querySelector('.screenshots h2')
+.textContent=i18n[lang].shots;
+
+document.querySelector('#download h2')
+.textContent=i18n[lang].downloadTitle;
+
+document.querySelector('#download p')
+.textContent=i18n[lang].downloadText;
+
+document.querySelector('#download a')
+.textContent=i18n[lang].downloadBtn;
+
+document.querySelector('#support h2')
+.textContent=i18n[lang].supportTitle;
+
+document.querySelector('#support p')
+.textContent=i18n[lang].supportText;
+
+document.querySelector('#support a')
+.textContent=i18n[lang].supportBtn;
+
+const imgs=[
+'home-light.png',
+'charts-light.png',
+'new-record-light.png',
+'home-dark.png',
+'charts-dark.png',
+'new-record-dark.png'
+];
+
+document.querySelector('.phone-stack img')
+.src=screenshot(lang,'home-light.png');
+
+document
+.querySelectorAll('.shots img')
+.forEach((e,i)=>
+e.src=screenshot(lang,imgs[i]));
+
+}
+
+setLang(
+localStorage.getItem('lang') ?? 'ru'
+);
+
+</script>  
 <body>
-  <main class="page">
+  <div style="position:absolute;top:24px;right:40px;z-index:100">
+    <button onclick="setLang('ru')" id="ruBtn">RU</button>
+    <button onclick="setLang('en')" id="enBtn">EN</button>
+  </div>
+  <main class="page" id="page">
     <section class="hero">
       <div class="hero-text">
         <div class="badge">Pressure Diary</div>
