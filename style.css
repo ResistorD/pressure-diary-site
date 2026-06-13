@@ -235,4 +235,41 @@ footer a {
   .panel {
     padding: 32px;
   }
+
+  .lang-switch {
+
+  margin-bottom: 18px;
+
+  display: inline-flex;
+
+  gap: 10px;
+}
+
+.lang-btn {
+
+  border: none;
+
+  padding: 10px 18px;
+
+  border-radius: 18px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .2s;
+
+  background: white;
+
+  color: var(--primary);
+
+  box-shadow: var(--shadow);
+}
+
+.lang-btn.active {
+
+  background: var(--primary);
+
+  color: white;
+}
 }
