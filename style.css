@@ -114,6 +114,10 @@ body {
 }
 
 .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   text-decoration: none;
   padding: 16px 28px;
   border-radius: 18px;
