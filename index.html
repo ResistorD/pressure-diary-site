@@ -3,8 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pressure Diary — дневник давления</title>
-  <meta name="description" content="Простой дневник артериального давления и пульса без аккаунтов, рекламы и подписок." />
+  <title>Pressure Diary — бесплатный дневник давления для Android</title>
+  <meta name="description" content="Бесплатный дневник давления и пульса для Android: графики, заметки, экспорт PDF/CSV и резервные копии. Без аккаунта, рекламы и подписки." />
+  <link rel="canonical" href="https://resistord.github.io/pressure-diary-site/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pressure Diary — free blood pressure diary for Android" />
+  <meta property="og:description" content="Charts, notes, PDF/CSV export and backups. No account, ads or subscription." />
+  <meta property="og:url" content="https://resistord.github.io/pressure-diary-site/" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -17,10 +22,10 @@
         </div>
 
         <div class="badge">Pressure Diary</div>
-        <h1>Дневник давления без лишнего шума</h1>
+        <h1>Давление и пульс — в одном понятном дневнике</h1>
         <p>
-          Удобное приложение для записи артериального давления и пульса:
-          журнал, графики, заметки, теги, экспорт и резервные копии.
+          Бесплатное приложение для Android: записывайте показания тонометра,
+          смотрите графики и сохраняйте историю в PDF или CSV для обсуждения с врачом.
         </p>
 
         <div class="actions">
@@ -64,7 +69,7 @@
       <section id="download" class="panel">
         <h2>Скачать</h2>
         <p>
-          APK-файл будет доступен здесь после публикации тестовой сборки.
+          Доступна версия 1.0.0 для Android. APK: 68,5 МБ. Скачивание и использование бесплатны; поддержка проекта не обязательна.
         </p>
         <a class="button primary"
             href="https://github.com/ResistorD/pressure-diary-site/releases/download/v1.0.0/PressureDiary-v1.0.0-release.apk">Скачать APK</a>
@@ -76,11 +81,12 @@
           Если приложение оказалось полезным — можно символически поддержать разработку.
           Но это совершенно не обязательно 🙂
         </p>
-        <a class="button secondary" href="https://ko-fi.com/pressurediary">Ссылка появится позже</a>
+        <a class="button secondary" href="https://ko-fi.com/pressurediary">Поддержать на Ko-fi</a>
       </section>
     </div>
 
     <footer>
+      <p id="app-purpose">Приложение сохраняет введённые показания тонометра. Оно не измеряет давление и не назначает лечение.</p>
       <p>Contact: <a href="mailto:resistor.rs@gmail.com">resistor.rs@gmail.com</a></p>
       <p>© Pressure Diary</p>
     </footer>
@@ -89,11 +95,11 @@
   <script>
     const i18n = {
       ru: {
-        pageTitle: 'Pressure Diary — дневник давления',
-        metaDescription: 'Простой дневник артериального давления и пульса без аккаунтов, рекламы и подписок.',
+        pageTitle: 'Pressure Diary — бесплатный дневник давления для Android',
+        metaDescription: 'Бесплатный дневник давления и пульса для Android: графики, заметки, экспорт PDF/CSV и резервные копии. Без аккаунта, рекламы и подписки.',
         heroAlt: 'Главный экран Pressure Diary',
-        title: 'Дневник давления без лишнего шума',
-        desc: 'Удобное приложение для записи артериального давления и пульса: журнал, графики, заметки, теги, экспорт и резервные копии.',
+        title: 'Давление и пульс — в одном понятном дневнике',
+        desc: 'Бесплатное приложение для Android: записывайте показания тонометра, смотрите графики и сохраняйте историю в PDF или CSV для обсуждения с врачом.',
         download: 'Скачать APK',
         support: 'Поддержать проект',
         note: 'Без аккаунтов. Без рекламы. Без подписок.',
@@ -116,18 +122,18 @@
           'Новая запись, тёмная тема'
         ],
         downloadTitle: 'Скачать',
-        downloadText: 'APK-файл будет доступен здесь после публикации тестовой сборки.',
+        downloadText: 'Доступна версия 1.0.0 для Android. APK: 68,5 МБ. Скачивание и использование бесплатны; поддержка проекта не обязательна.',
         downloadBtn: 'Скачать APK',
         supportTitle: 'Поддержать проект',
         supportText: 'Если приложение оказалось полезным — можно символически поддержать разработку. Но это совершенно не обязательно 🙂',
         supportBtn: 'Поддержать на Ko-fi'
       },
       en: {
-        pageTitle: 'Pressure Diary — blood pressure tracker',
-        metaDescription: 'A simple blood pressure and pulse tracker with no accounts, ads, or subscriptions.',
+        pageTitle: 'Pressure Diary — free blood pressure diary for Android',
+        metaDescription: 'Free Android blood pressure and pulse diary with charts, notes, PDF/CSV export and backups. No account, ads or subscription.',
         heroAlt: 'Pressure Diary home screen',
-        title: 'Blood pressure tracking without noise',
-        desc: 'A simple app for tracking blood pressure and pulse: journal, charts, notes, tags, export and backup.',
+        title: 'Your blood pressure history, ready to share',
+        desc: 'A free Android app to log readings from your blood pressure monitor, view charts and export your history as PDF or CSV to discuss with your doctor.',
         download: 'Download APK',
         support: 'Support project',
         note: 'No accounts. No ads. No subscriptions.',
@@ -150,7 +156,7 @@
           'New record, dark theme'
         ],
         downloadTitle: 'Download',
-        downloadText: 'The APK file will be available here after the first public test build.',
+        downloadText: 'Version 1.0.0 for Android is available. APK: 68.5 MB. Free to download and use; supporting the project is optional.',
         downloadBtn: 'Download APK',
         supportTitle: 'Support project',
         supportText: 'If Pressure Diary turned out useful, you can support development. Completely optional 🙂',
@@ -172,9 +178,13 @@
     }
 
     function setLang(lang) {
-      const dict = i18n[lang] ?? i18n.ru;
+      lang = lang === 'en' ? 'en' : 'ru';
+      const dict = i18n[lang];
 
-      localStorage.setItem('lang', lang);
+      try { localStorage.setItem('lang', lang); } catch (_) {}
+      const url = new URL(window.location.href);
+      url.searchParams.set('lang', lang);
+      try { history.replaceState(null, '', url); } catch (_) {}
       document.documentElement.lang = lang;
       document.title = dict.pageTitle;
 
@@ -183,6 +193,9 @@
         metaDescription.setAttribute('content', dict.metaDescription);
       }
 
+      document.getElementById('app-purpose').textContent = lang === 'en'
+        ? 'The app records readings from your blood pressure monitor. It does not measure blood pressure or recommend treatment.'
+        : 'Приложение сохраняет введённые показания тонометра. Оно не измеряет давление и не назначает лечение.';
       document.querySelector('.hero h1').textContent = dict.title;
       document.querySelector('.hero p').textContent = dict.desc;
       document.querySelector('.actions a:nth-child(1)').textContent = dict.download;
@@ -221,7 +234,11 @@
       activeButton.setAttribute('aria-pressed', 'true');
     }
 
-    setLang(localStorage.getItem('lang') ?? 'ru');
+    const requestedLang = new URLSearchParams(window.location.search).get('lang');
+    let savedLang;
+    try { savedLang = localStorage.getItem('lang'); } catch (_) {}
+    setLang(['ru', 'en'].includes(requestedLang) ? requestedLang :
+      (['ru', 'en'].includes(savedLang) ? savedLang : 'ru'));
   </script>
 </body>
 </html>
