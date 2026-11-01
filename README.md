@@ -4,22 +4,26 @@ A free Android app for recording blood pressure and pulse, viewing charts, and e
 
 **No account. No ads. No subscription.**
 
-[Website (English)](https://resistord.github.io/pressure-diary-site/?lang=en) · [Сайт на русском](https://resistord.github.io/pressure-diary-site/?lang=ru) · [Download release](https://github.com/ResistorD/pressure-diary-site/releases/tag/v1.0.0)
+[Website (English)](https://resistord.github.io/pressure-diary-site/?lang=en) · [Сайт на русском](https://resistord.github.io/pressure-diary-site/?lang=ru) · [Download release](https://github.com/ResistorD/pressure-diary-site/releases/tag/v1.1.0)
 
 ## Features
 
 - Measurement journal organized by day.
+- Single readings and multiple consecutive readings grouped as a measurement series.
+- Series average, with individual readings available in the journal.
+- Left/right arm marking.
 - Blood pressure and pulse charts.
 - Notes, note templates, and tags for measurement context.
-- PDF and CSV export.
+- Statistics that treat each series as one averaged observation.
+- PDF and CSV export with support for measurement series and arm information.
 - JSON backups.
 - Light and dark themes; Russian and English interfaces.
 
 ## Download
 
-Version **1.0.0** is available for Android as an APK (68.5 MB).
+Version **1.1.0** is available for Android as an APK (69.2 MB).
 
-Open the release page above and select `PressureDiary-v1.0.0-release.apk` under **Assets**. The source-code ZIP/TAR files on that page contain the website, not the Android installer.
+Open the release page above and select `PressureDiary-v1.1.0-release.apk` under **Assets**. The source-code ZIP/TAR files on that page contain the website, not the Android installer.
 
 The app records readings obtained with a blood pressure monitor. It does not measure blood pressure or recommend treatment.
 
@@ -35,6 +39,6 @@ This repository contains the public website and downloadable Android release. It
 
 ## По-русски
 
-«Дневник давления» — бесплатное приложение для Android. Записывайте давление и пульс, добавляйте заметки и теги, смотрите графики и сохраняйте историю в PDF или CSV для обсуждения с врачом. Есть резервные копии JSON, светлая и тёмная темы.
+«Дневник давления» — бесплатное приложение для Android. Записывайте одиночные измерения или серии последовательных замеров: приложение сохраняет отдельные значения и рассчитывает среднее серии. Отмечайте левую или правую руку, добавляйте заметки и теги, смотрите графики и статистику, сохраняйте историю в PDF или CSV для обсуждения с врачом. Серии учитываются как одно среднее значение в статистике и поддерживаются при экспорте. Есть резервные копии JSON, светлая и тёмная темы.
 
 Без аккаунта, рекламы и подписки. Скачать установочный APK можно на странице релиза по ссылке выше. Поддержка разработки добровольная.
